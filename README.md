@@ -27,11 +27,13 @@ Pada bagian Menu terdapat File Master yang berisi :
 - Data supplier
 - Data customer
 - Data rekening
+
 Pada bagian Menu terdapat File transaksi yang berisi :
 - Barang masuk
 - Barang keluar
 - Kas masuk
 - Kas keluar
+
 Laporan yang berisi :
 - Barang masuk
 - Barang keluar
@@ -42,10 +44,10 @@ Dan ada tampilan tabel daftar barang, total barang masuk, total kas masuk, kas k
 
 ##### Laporan
 
-- Laporan Barang masuk
+######Laporan Barang masuk
 ![gith3](https://github.com/user-attachments/assets/f8b47fe6-5242-468e-b9cf-f8b694755d42)
 
-- Laporan kas masuk
+######Laporan kas masuk
 ![gith4](https://github.com/user-attachments/assets/d22f55c6-d2ea-4c1e-9164-b1e5f7f59b0d)
 
 ## File Pendukung
