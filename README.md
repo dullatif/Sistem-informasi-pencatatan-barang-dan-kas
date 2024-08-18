@@ -42,7 +42,7 @@ Dan ada tampilan tabel daftar barang, total barang masuk, total kas masuk, kas k
 
 ##### Laporan
 
-- Laporan barang masuk
+- Laporan Barang masuk
 ![gith3](https://github.com/user-attachments/assets/f8b47fe6-5242-468e-b9cf-f8b694755d42)
 
 - Laporan kas masuk
