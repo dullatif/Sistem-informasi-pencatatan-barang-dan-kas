@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="132571cb-3b38-4496-be59-68f5189ccbb7">
+	<property name="ireport.zoom" value="1.1000000000000032"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="tgl1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="tgl2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT `id_barang`, `jenis_barang`, `nama_suplier`, `jumlah`, `tgl_masuk` FROM `barang_masuk` WHERE  tgl_masuk BETWEEN $P{tgl1} AND $P{tgl2}]]>
+	</queryString>
+	<field name="id_barang" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_barang" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_suplier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_masuk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="169" splitType="Stretch">
+			<frame>
+				<reportElement uuid="dc62b9c0-3bdc-4106-bef0-28c4427657ef" mode="Opaque" x="1" y="0" width="554" height="100" forecolor="#2C3E50" backcolor="#2C3E50"/>
+				<staticText>
+					<reportElement uuid="2eb67247-b508-4b49-bd2d-0e7ae9b390ec" x="204" y="0" width="350" height="48" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="30"/>
+					</textElement>
+					<text><![CDATA[CAR ACESSORIES]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="70abeffe-7254-49c9-8b12-3a588df530df" x="269" y="61" width="221" height="13" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Center">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<text><![CDATA[Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="b2ff5912-6625-4434-82aa-894bdfd6420c" x="251" y="48" width="266" height="13" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Center">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<text><![CDATA[Jl. Tebet Timur Raya No.21D, RT.9/RW.10, Tebet Tim., Kec. Tebet]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7ed90269-8ffd-4d26-866e-60ee5ea62869" x="327" y="74" width="100" height="12" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Center">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<text><![CDATA[12820]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement uuid="dc62b9c0-3bdc-4106-bef0-28c4427657ef" mode="Opaque" x="0" y="105" width="554" height="51" forecolor="#2C3E50" backcolor="#2C3E50"/>
+				<staticText>
+					<reportElement uuid="2a8edb1d-e691-4a71-874d-f3b33b640043" x="221" y="0" width="323" height="45" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="20"/>
+					</textElement>
+					<text><![CDATA[LAPORAN BARANG MASUK]]></text>
+				</staticText>
+			</frame>
+			<image>
+				<reportElement uuid="1db3f9a5-e530-4ba2-9466-ba28b5317e3a" x="3" y="3" width="200" height="150"/>
+				<imageExpression><![CDATA["C:\\Users\\Latif\\Documents\\NetBeansProjects\\Tugas_Akhir\\src\\image\\4.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="edf88e99-5cd7-4321-bbf8-49ad85cdbdf4" mode="Opaque" x="100" y="0" width="84" height="21" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Id Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="da60b83e-46d4-4b40-bb18-ad4aa8ce111e" mode="Opaque" x="184" y="0" width="186" height="21" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Jenis Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0aed9124-ff5b-40a6-95be-bd3136e657a4" mode="Opaque" x="370" y="0" width="118" height="21" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Nama Supplier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8614db13-0de8-40dc-881f-3536fa66bb8e" mode="Opaque" x="488" y="0" width="67" height="21" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Jumlah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a7384d88-68a5-404b-9fdb-c52458bff4cb" mode="Opaque" x="0" y="0" width="100" height="21" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Tanggal Masuk]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="aef7027c-0bcc-44ba-b22e-757af2b4d798" x="0" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="aef7027c-0bcc-44ba-b22e-757af2b4d798" x="100" y="0" width="84" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="aef7027c-0bcc-44ba-b22e-757af2b4d798" x="184" y="0" width="186" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="aef7027c-0bcc-44ba-b22e-757af2b4d798" x="370" y="0" width="118" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="aef7027c-0bcc-44ba-b22e-757af2b4d798" x="488" y="0" width="67" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="b0910bf5-2428-4f37-920e-d4f71629631b" x="105" y="0" width="79" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="716ef075-861b-4518-8443-0d9fb243beae" x="188" y="0" width="182" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenis_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d18aafd2-394e-454d-b594-41570f6d4d22" x="375" y="0" width="113" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_suplier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d66f43d8-33cd-4b6f-b4df-72ffa49b72db" x="492" y="0" width="63" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5a8ecade-c8c0-4747-8022-0f6e42a30949" x="5" y="0" width="95" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl_masuk}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="138" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="18589261-08fd-4c28-b7df-cb4e648f201b" x="427" y="104" width="100" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[( Ismay Darti )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="36b5b301-c60f-4313-bdc0-ba8605592945" x="406" y="47" width="41" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="de53e21b-2dcd-4e5d-958a-53a700ce079e" x="461" y="117" width="36" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Pemilik]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="8dfa7554-6b93-4a8b-a292-bbbe603ae04f" x="446" y="47" width="107" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="29" splitType="Stretch">
+			<frame>
+				<reportElement uuid="81c98000-2a8b-49ef-a54a-32a7fd647937" mode="Opaque" x="1" y="0" width="555" height="28" backcolor="#000000"/>
+				<textField>
+					<reportElement uuid="91b53a0f-40a3-4a0e-951f-41d46aea9d3d" x="445" y="4" width="69" height="20" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Times New Roman"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="67b25338-ba93-43de-9950-7231d582f452" x="513" y="4" width="36" height="20" forecolor="#FFFFFF"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
